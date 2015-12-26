@@ -8,3 +8,5 @@ Odd notes:
 - Work has continued to complete the project in another github repository,
   Udacity-FEND-P1-Portfolio. This repository "freezes" the code at the "mockup"
   stage.
+- Note that the commit history required to get to this state is stored in the
+  continuing (P1) repository, which was copied without history.
