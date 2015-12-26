@@ -1,0 +1,185 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    /*
+     * Mockup font is Gotham HTF from Hoefler & Co. (typography.com). Lato is
+     * my best match from Google Fonts.
+     */
+	font-family: "Lato", Geneva, sans-serif;
+
+	/* border: 3px dotted purple !important; / * Border For initial testing */
+
+}
+
+/*
+ * This 12-column framework has been borowed from the Udacity class materials.
+ * It simplifies aligning subdivided rows, using a flexbox layout for each row.
+ * a col-1 <div> takes a single column (one-twelfth of the page width); a col-4
+ * takes four columns (one-third of the page).
+ */
+
+ .grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    /* border: 2px solid green !important; / * Border For initial testing */
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 2px dashed black !important; / * Border For initial testing */
+}
+
+.col-1 {
+    width: 8.33%;
+    /* border: 2px solid red !important; / * Border For initial testing */
+}
+
+.col-2 {
+    width: 16.66%;
+}
+/*
+.col-3 {
+    width: 25%;
+}
+*/
+.col-4 {
+    width: 33.33%;
+    /* border: 2px solid red !important; / * Border For initial testing */
+}
+/*
+.col-5 {
+    width: 41.66%;
+}
+*/
+.col-6 {
+    width: 50%;
+    /* border: 2px solid red !important; / * Border For initial testing */
+}
+/*
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+*/
+.col-10 {
+    width: 83.33%;
+}
+/*
+.col-11 {
+    width: 91.66%;
+}
+*/
+.col-12 {
+    width: 100%;
+    /* border: 2px solid red !important; / * Border For initial testing */
+}
+
+/* Styles for images */
+
+.udacity-logo {
+    width: 75%;         /* scaled as percent of parent col-2 */
+    height: auto;
+    float: left;
+    margin-left: 6%;
+}
+
+.hero-image {
+    width: 98%;
+    margin: 1%;
+}
+
+.app-image {
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Text styles */
+
+/*
+ * The color for most text is specified as #747704 in the mockup, but the
+ * color actually displayed (checked by Adobe Acrobat) is #676857. I've
+ * used the latter, as it looks better to me.
+ */
+
+.my-name {
+    margin: 0 2% 0 0;
+    font-size: 4em;
+    font-weight: 100;
+    line-height: 75%;           /* Align top of all-caps with top of logo */
+    text-transform: uppercase;
+    text-align: right;
+    color: #676857;
+}
+
+.job-title {
+    font-size: 1.5em;
+    font-weight: 300;
+    float: right;
+    text-transform: uppercase;
+    margin: 3px 2% 0 0;
+    color: #676857;
+}
+
+.application-header {
+    font-size: 2em;
+    font-weight: 400;
+    width: 98%;
+    margin: 1%;
+    color: #bcbbbb;
+}
+
+.app-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    color: #676857;
+}
+
+.app-link {
+    font-size: .75em;
+    float: left;
+    margin: 0;
+    color: #676857;
+}
+
+.app-description {  /* used in app stub and intro pages */
+    font-size: 2em;
+    font-weight: 400;
+    text-align: left;
+    margin: auto;
+    color: #676857;
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+/* Containers */
+
+/* Aligns application image, title, and link within the flexbox row */
+.app-box {
+    margin: 3%;
+    padding-bottom: 30px;
+}
+
+/* Horizontal line to set off header */
+.h-line {
+    display: block;
+    margin: 20px 1% 20px 1%;
+    border-style: inset;
+    border-width: 1px;
+    border-color: #bcbbbb;
+}
+
